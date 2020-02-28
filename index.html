@@ -17,24 +17,24 @@
   <body>
 
     <nav class="navbar navbar-expand-md">
-      <div class="container">
-  <a class="navbar-brand" href="#">
-    <img src="assets/logotipos/logotipo_branco.webp"alt="">
-  </a>
+		<div class="container">
+		  <a class="navbar-brand" href="#">
+		    <img src="assets/logotipos/logotipo_branco.webp"alt="">
+		  </a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Quando tenho direito?</a>
-      <a class="nav-item nav-link" href="#">LiberFly é confiável?</a>
-      <a class="nav-item nav-link" href="#">Perguntas Frequentes</a>
-      <a class="nav-item nav-link" href="#">Blog</a>
-    </div>
-  </div>
-</div>
-</nav>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+		    <div class="navbar-nav">
+		      <a class="nav-item nav-link active" href="#">Quando tenho direito?</a>
+		      <a class="nav-item nav-link" href="#">LiberFly é confiável?</a>
+		      <a class="nav-item nav-link" href="#">Perguntas Frequentes</a>
+		      <a class="nav-item nav-link" href="#">Blog</a>
+		    </div>
+		  </div>
+		</div>
+	</nav>
 
 
     <div class="container-fluid" id="hero1">
@@ -53,34 +53,28 @@
 
         <div class="inner-text">
 
-          <h2>Como obter sua compensação?</h2>
+			<h2>Como obter sua compensação?</h2>
+			<div class="card-deck" id="compensacoes">
+	            <div class="card col col-sm" v-for="compensacao in compensacoes">
+	              <div class="card-body">
+	                <h5 class="card-title">{{ compensacao.numero }}</h5>
+	                <p class="card-text">{{ compensacao.text }}</p>
+	              </div>
+	            </div>  
+			</div>
 
+		<h4>Durante o atendimento você pode optar pela negociação expressa ou pela negociação tradicional do caso.</h4>
 
-          <div class="card-deck" id="compensacoes">
-            <div class="card col col-sm" v-for="compensacao in compensacoes">
-              <div class="card-body">
-                <h5 class="card-title">{{ compensacao.numero }}</h5>
-                <p class="card-text">{{ compensacao.text }}</p>
-
-              </div>
-            </div>          
-            
-          </div>
-
-          <h4>Durante o atendimento você pode optar pela negociação expressa ou pela negociação tradicional do caso.</h4>
-
-          <div class="card-deck" id="negociacoes">
+		<div class="card-deck" id="negociacoes">
             <div class="card" v-for="negociacao in negociacoes">
-              <div class="card-body">
+				<div class="card-body">
                 <h5 class="card-title">{{ negociacao.titulo }}</h5>
                 <p class="card-text">{{ negociacao.text }}</p>
 
-           	</div>
+           		</div>
             </div>          
             
-          </div>
-        
-        
+        </div>
 
         <button class="btn btn-primary" type="submit" id="call-to-action">Verificar meu caso</button>
       </div>
@@ -114,55 +108,54 @@
  
 
 <footer>
-  <div class="container">
+	<div class="container">
 
+		<div class="row">
+			<div class="col-sm-4">
+			    <img src="assets/logotipos/logotipo_branco.webp" alt="">
 
-<div class="row">
-  <div class="col-sm-4">
-    <img src="assets/logotipos/logotipo_branco.webp" alt="">
+			    <p>A liberFly é uma startup que media soluções entre passageiros e companhias aéreas fundada em 2016.</p>
+			    <p>Buscamos proteger os passageiros amparados pela Agência Nacional de Aviação Civil (Anac) e Código de Defesa do Consumidor.</p>
+		  	</div>
+		  	<div class="col-sm-4">
+				<ul  id="situacao_direito">
+			        <h5>Situações que tem direito</h5>
+			      
+			        <li v-for="direito in direitos">
+			          <a href="">
+			          {{ direito.text }}
+			        </a>
+			        </li>
+			    </ul>
+		    </div>
+		    
+		    <div class="col-sm-4" >
+		    	<ul id="nossa_empresa">
+		        	<h5> Nossa empresa</h5>
+		        	<li v-for="institucional in institucionais">
+		          		<a href="">
+		          		{{ institucional.text }}
+		        		</a>
+		        	</li>
+		      	</ul>
 
-    <p>A liberFly é uma startup que media soluções entre passageiros e companhias aéreas fundada em 2016.</p>
-    <p>Buscamos proteger os passageiros amparados pela Agência Nacional de Aviação Civil (Anac) e Código de Defesa do Consumidor.</p>
-  </div>
-  <div class="col-sm-4">
-      <ul  id="situacao_direito">
-        <h5>Situações que tem direito</h5>
-      
-        <li v-for="direito in direitos">
-          <a href="">
-          {{ direito.text }}
-        </a>
-        </li>
-      </ul>
-    </div>
-    
-    <div class="col-sm-4" >
-      <ul id="nossa_empresa">
-        <h5> Nossa empresa</h5>
-        <li v-for="institucional in institucionais">
-          <a href="">
-          {{ institucional.text }}
-        </a>
-        </li>
-      </ul>
+		      	<ul id="suporte">
+		        	<h5> Suporte</h5>
+		        	<li v-for="suporte in suportes">
+		          		<a href="">
+		          		{{ suporte.text }}
+		        		</a>
+		        	</li>
+		      	</ul>
 
-      <ul id="suporte">
-        <h5> Suporte</h5>
-        <li v-for="suporte in suportes">
-          <a href="">
-          {{ suporte.text }}
-        </a>
-        </li>
-      </ul>
-
-      <div id="redes">
-        <a href="">
-          <img v-for="image in images" :src="image.url"  />
-        </a>
-      </div>
-    </div>
-  </div>
-  </div>
+		     	<div id="redes">
+		        	<a href="">
+		          		<img v-for="image in images" :src="image.url"  />
+		        	</a>
+		      	</div>
+		    </div>
+		</div>
+	</div>
 </footer>
 
     <!-- Optional JavaScript -->

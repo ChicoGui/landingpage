@@ -1,14 +1,10 @@
 
 
-    .navbar{background: rgba(38, 51, 106, 1);
-    padding: 5px 0;}
+    .navbar{background: rgba(38, 51, 106, 1); padding: 5px 0;}
     .navbar-brand img{width: 150px;}
     .nav-item{color: #fff;}
     .nav-item:hover{color: #ccc;}
-    span.navbar-toggler-icon {
-    background: url(assets/hamburg.svg);
-    height: 25px;
-}
+    span.navbar-toggler-icon {background: url(assets/hamburg.svg); height: 25px;}
 
     .container-fluid {padding: 0 0;}
     #hero1, #hero3{position: relative; background-color: rgba(119, 53, 255, 0.8); }
@@ -50,19 +46,20 @@
  #hero2 .inner-text{top: 4%;}
  #hero3 .inner-text{top: 10%;}
 
+#banner1, #banner2. #banner3, #banner4{display: block;} 
 #banner1{height: 580px;}
-#banner3, #banner4{height: 580px;display: block;}
-#banner2{height: 1500px;  display: block;}
 
+#banner2{height: 1500px;}
+#banner3, #banner4{height: 580px}
 }
 
 
 @media (max-width: 767.98px) { 
-
-#banner1{height: 580px; display: block;}
-#banner2{height: 1750px; display: block;}
-#banner3{height: 400px; display: block;}
-#banner4{height: 460px; display: block;}
+#banner1, #banner2. #banner3, #banner4{display: block;} 
+#banner1{height: 580px;}
+#banner2{height: 1750px;}
+#banner3{height: 400px;}
+#banner4{height: 460px;}
  #hero1 .inner-text{top:10%;}
  #hero2 .inner-text{top: 4%;}
  #hero3 .inner-text{top: 10%;}
@@ -70,10 +67,12 @@
 }
 
 
-@media (max-width: 991.98px) {#banner1{height: 580px; display: block;}
-#banner2{height: 1000px; display: block;}
-#banner3{height: 400px; display: block;}
-#banner4{height: 460px; display: block;}
+@media (max-width: 991.98px) {
+#banner1, #banner2. #banner3, #banner4{display: block;} 
+#banner1{height: 580px;}
+#banner2{height: 1000px;}
+#banner3{height: 400px;}
+#banner4{height: 460px;}
  #hero1 .inner-text{top:10%;}
  #hero2 .inner-text{top: 12%;}
  #hero3 .inner-text{top: 10%;}
@@ -81,10 +80,12 @@
 }
 
 
-@media (max-width: 1199.98px) {#banner1{height: 580px; display: block;}
-#banner2{height: 1600px; display: block;}
-#banner3{height: 400px; display: block;}
-#banner4{height: 460px; display: block;}
+@media (max-width: 1199.98px) {
+#banner1, #banner2. #banner3, #banner4{display: block;} 
+#banner1{height: 580px;}
+#banner2{height: 1040px;}
+#banner3{height: 400px;}
+#banner4{height: 420px;}
  #hero1 .inner-text{top:10%;}
  #hero2 .inner-text{top: 5%;}
  #hero3 .inner-text{top: 10%;}
