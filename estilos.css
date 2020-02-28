@@ -60,9 +60,9 @@
 @media (max-width: 767.98px) { 
 
 #banner1{height: 580px; display: block;}
-#banner2{min-height: 1750px; display: block;}
+#banner2{height: 1750px; display: block;}
 #banner3{height: 400px; display: block;}
-#banner4{min-height: 460px; display: block;}
+#banner4{height: 460px; display: block;}
  #hero1 .inner-text{top:10%;}
  #hero2 .inner-text{top: 4%;}
  #hero3 .inner-text{top: 10%;}
@@ -71,9 +71,9 @@
 
 
 @media (max-width: 991.98px) {#banner1{height: 580px; display: block;}
-#banner2{min-height: 9350px; display: block;}
+#banner2{height: 935px; display: block;}
 #banner3{height: 400px; display: block;}
-#banner4{min-height: 460px; display: block;}
+#banner4{height: 460px; display: block;}
  #hero1 .inner-text{top:10%;}
  #hero2 .inner-text{top: 12%;}
  #hero3 .inner-text{top: 10%;}
@@ -82,9 +82,9 @@
 
 
 @media (max-width: 1199.98px) {#banner1{height: 580px; display: block;}
-#banner2{min-height: 935px; display: block;}
+#banner2{height: 935px; display: block;}
 #banner3{height: 400px; display: block;}
-#banner4{min-height: 460px; display: block;}
+#banner4{height: 460px; display: block;}
  #hero1 .inner-text{top:10%;}
  #hero2 .inner-text{top: 12%;}
  #hero3 .inner-text{top: 10%;}
