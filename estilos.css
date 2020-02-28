@@ -15,7 +15,7 @@
     #hero2, #hero4{position: relative; background-color: rgba(50, 53, 255, 0.8); }
     #banner1,#banner2,#banner3,#banner4{width: 100%; object-fit:cover; opacity: 40%;}
     #banner1{height: 850px; }
-    #banner2{height: 800px; }
+    #banner2{height: 914px; }
     #banner3, #banner4 {height: 400px;}
     .inner-text{position: absolute; top:25%; margin: 0 10%; width: 80%; color: #fff;}
     .inner-text h1, .inner-text h2, .inner-text h3, .inner-text h4, .inner-text h5{ text-shadow: 13px 6px 20px #26336a; text-align: center}
