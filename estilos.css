@@ -1,0 +1,96 @@
+
+
+    .navbar{background: rgba(38, 51, 106, 1);
+    padding: 5px 0;}
+    .navbar-brand img{width: 150px;}
+    .nav-item{color: #fff;}
+    .nav-item:hover{color: #ccc;}
+    span.navbar-toggler-icon {
+    background: url(assets/hamburg.svg);
+    height: 25px;
+}
+
+    .container-fluid {padding: 0 0;}
+    #hero1, #hero3{position: relative; background-color: rgba(119, 53, 255, 0.8); }
+    #hero2, #hero4{position: relative; background-color: rgba(50, 53, 255, 0.8); }
+    #banner1,#banner2,#banner3,#banner4{width: 100%; object-fit:cover; opacity: 40%;}
+    #banner1{height: 850px; }
+    #banner2{height: 800px; }
+    #banner3, #banner4 {height: 400px;}
+    .inner-text{position: absolute; top:25%; margin: 0 10%; width: 80%; color: #fff;}
+    .inner-text h1, .inner-text h2, .inner-text h3, .inner-text h4, .inner-text h5{ text-shadow: 13px 6px 20px #26336a; text-align: center}
+    .inner-text p{ width: 80%; margin: 0 auto; text-align: center; text-shadow: 13px 6px 20px #26336a}    
+
+    #call-to-action{color: #fff; background-color: #26336a; border-color: #26336a; padding: .5em 1em; font-size: 1.5em; margin: 10px auto; display: block;}
+
+    #call-to-action:hover{color: #fff; background-color: #2c355d;}
+
+    #hero2 .card{background: rgba(77, 32, 160, 0.67); border-bottom: dashed 2px #fff; }
+    .card-body { text-align: center;}
+
+    #compensacoes {margin: 20px 0 60px 0;}
+    #depoimentos{height: 100%}
+
+
+    #situacao_direito, #nossa_empresa, #suporte{padding: 0 0;}
+    #situacao_direito li, #nossa_empresa li , #suporte li{list-style: none;}
+
+    #situacao_direito li a, #nossa_empresa li a, #suporte li a{list-style: none; color: #fff;}
+
+    #situacao_direito li a:hover, #nossa_empresa li a:hover, #suporte li a:hover{list-style: none; color: #ccc;}
+
+    #redes img{margin-right: .25em;}
+
+    footer{padding: 25px 0; background: rgba(38, 51, 106, 1); color: #fff;}
+
+
+@media (max-width: 575.98px) { 
+.navbar {padding: 1em;}
+ #hero1 .inner-text{top:10%;}
+ #hero2 .inner-text{top: 4%;}
+ #hero3 .inner-text{top: 10%;}
+
+#banner1{height: 580px;}
+#banner3, #banner4{height: 580px;display: block;}
+#banner2{height: 1500px;  display: block;}
+
+}
+
+
+@media (max-width: 767.98px) { 
+
+#banner1{height: 580px; display: block;}
+#banner2{min-height: 1750px; display: block;}
+#banner3{height: 400px; display: block;}
+#banner4{min-height: 460px; display: block;}
+ #hero1 .inner-text{top:10%;}
+ #hero2 .inner-text{top: 4%;}
+ #hero3 .inner-text{top: 10%;}
+
+}
+
+
+@media (max-width: 991.98px) {#banner1{height: 580px; display: block;}
+#banner2{min-height: 9350px; display: block;}
+#banner3{height: 400px; display: block;}
+#banner4{min-height: 460px; display: block;}
+ #hero1 .inner-text{top:10%;}
+ #hero2 .inner-text{top: 12%;}
+ #hero3 .inner-text{top: 10%;}
+
+}
+
+
+@media (max-width: 1199.98px) {#banner1{height: 580px; display: block;}
+#banner2{min-height: 935px; display: block;}
+#banner3{height: 400px; display: block;}
+#banner4{min-height: 460px; display: block;}
+ #hero1 .inner-text{top:10%;}
+ #hero2 .inner-text{top: 12%;}
+ #hero3 .inner-text{top: 10%;}
+
+}
+
+}
+
+    

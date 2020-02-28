@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>LiberFly - LandingPage</title>
+
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+  <a class="navbar-brand" href="#">
+    <img src="assets/logotipos/logotipo_branco.webp"alt="">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Quando tenho direito?</a>
+      <a class="nav-item nav-link" href="#">LiberFly é confiável?</a>
+      <a class="nav-item nav-link" href="#">Perguntas Frequentes</a>
+      <a class="nav-item nav-link" href="#">Blog</a>
+    </div>
+  </div>
+</div>
+</nav>
+
+
+    <div class="container-fluid" id="hero1">
+      <img src="assets/banners/1.jpg" class="img-fluid" id="banner1" alt="Responsive image">
+
+        <div class="inner-text">
+          <h1>É Fácil reverter seu problema aéreo em compensação.</h1>
+          <p>Preencha nosso formulário em 3 minutos e cuidamos de tudo. Você pode ser idenizado em até R$ 7.000,00</p>
+          <button class="btn btn-primary" type="submit" id="call-to-action">Reinvidicar minha compensação</button>
+      </div>
+
+    </div>
+
+    <div class="container-fluid" id="hero2">
+      <img src="assets/banners/2.jpg" class="img-fluid" id="banner2" alt="Responsive image">
+
+        <div class="inner-text">
+
+          <h2>Como obter sua compensação?</h2>
+
+
+          <div class="card-deck" id="compensacoes">
+            <div class="card" v-for="compensacao in compensacoes">
+              <div class="card-body">
+                <h5 class="card-title">{{ compensacao.numero }}</h5>
+                <p class="card-text">{{ compensacao.text }}</p>
+
+              </div>
+            </div>          
+            
+          </div>
+
+          <h4>Durante o atendimento você pode optar pela negociação expressa ou pela negociação tradicional do caso.</h4>
+
+          <div class="card-deck" id="negociacoes">
+            <div class="card" v-for="negociacao in negociacoes">
+              <div class="card-body">
+                <h5 class="card-title">{{ negociacao.titulo }}</h5>
+                <p class="card-text">{{ negociacao.text }}</p>
+
+           	</div>
+            </div>          
+            
+          </div>
+        
+        
+
+        <button class="btn btn-primary" type="submit" id="call-to-action">Verificar meu caso</button>
+      </div>
+
+    </div>
+
+    <div class="container-fluid" id="hero3">
+      <img src="assets/banners/voo_cancelado.jpg" class="img-fluid" id="banner3" alt="Responsive image">
+      
+        <div class="inner-text">
+          <h3>Não perca a oportunidade de ser idenizado.</h3>
+          <h4> Exija seus direitos.</h4>
+          <h5>Você não tem nada a perder, nós arcamos com todos os custos envolvidos. Você só paga se ganhar</h5>
+          <button class="btn btn-primary" type="submit" id="call-to-action">Reinvidicar Agora</button>
+        </div>
+      
+    </div>
+
+
+    <div class="container-fluid" id="hero4">
+      <img src="assets/banners/3.jpg" class="img-fluid" id="banner4" alt="Responsive image">
+      
+        <div class="inner-text">
+          <h3>É Fácil reverter seu problema aéreo em compensação.</h1>
+          <p>Preencha nosso formulário em 3 minutos e cuidamos de tudo. Você pode ser idenizado em até R$ 7.000,00</p>
+          <button class="btn btn-primary" type="submit" id="call-to-action">Reinvidicar minha compensação</button>
+        </div>
+      
+    </div>
+
+ 
+
+<footer>
+  <div class="container">
+
+
+<div class="row">
+  <div class="col-sm-4">
+    <img src="assets/logotipos/logotipo_branco.webp"alt="">
+
+    <p>A liberFly é uma startup que media soluções entre passageiros e companhias aéreas fundada em 2016.</p>
+    <p>Buscamos proteger os passageiros amparados pela Agência Nacional de Aviação Civil (Anac) e Código de Defesa do Consumidor.</p>
+  </div>
+  <div class="col-sm-4">
+      <ul  id="situacao_direito">
+        <h5>Situações que tem direito</h5>
+      
+        <li v-for="direito in direitos">
+          <a href="">
+          {{ direito.text }}
+        </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="col-sm-4" >
+      <ul id="nossa_empresa">
+        <h5> Nossa empresa</h5>
+        <li v-for="institucional in institucionais">
+          <a href="">
+          {{ institucional.text }}
+        </a>
+        </li>
+      </ul>
+
+      <ul id="suporte">
+        <h5> Suporte</h5>
+        <li v-for="suporte in suportes">
+          <a href="">
+          {{ suporte.text }}
+        </a>
+        </li>
+      </ul>
+
+      <div id="redes">
+        <a href="">
+          <img v-for="image in images" :src="image.url"  />
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="main.js"></script>
+
+    
+
+
+  </body>
+</html>
